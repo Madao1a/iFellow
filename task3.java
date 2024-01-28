@@ -11,16 +11,24 @@ public class task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите значение температуры в градусах Цельсия");
-        double n = Double.parseDouble(scanner.nextLine());
-        System.out.println("Выберите единицу измерения температуры для конвертации, введите цифру 1 - Кельвины, 2 - Фаренгейты");
-        double m = Double.parseDouble(scanner.nextLine());
-        if (m == 1) {
-            Celvin(n);
+        
+        if (scanner.hasNextDouble()) {
+            double n = Double.parseDouble(scanner.nextLine());
+            System.out.println("Выберите единицу измерения температуры для конвертации, введите цифру 1 - Кельвины, 2 - Фаренгейты");
+            double m = Double.parseDouble(scanner.nextLine());
+            if (m == 1) {
+                Celvin(n);
+            }
+            if (m==2) {
+                Fara(n);
+            }
+            else{
+                System.out.println("Извините, нет такого пункта, перезапустите программу и попробуйте снова.");
+            }
+            scanner.close();
+        }else   {
+            System.out.println("Извините, это не число, перезапустите программу и попробуйте снова.");
         }
-        if (m==2) {
-            Fara(n);
-        }
-
     }
 
     static void Celvin(double n){

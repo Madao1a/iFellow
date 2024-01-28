@@ -20,8 +20,6 @@ public class task2 {
                 System.out.println("повторяющися символ " + myArray[i]);
             }
         }
-        //System.out.println(myArray);
-
 
     }
 
