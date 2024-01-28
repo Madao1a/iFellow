@@ -3,9 +3,6 @@
 // Для генерации случайного числа использовать метод Math.random(), который возвращает значение в промежутке [0, 1].
 
 
-
-
-
 public class task1 {
 
     public static void main(String[] args) {
@@ -14,7 +11,6 @@ public class task1 {
         for (int i = 0; i < array.length; i++) {
             array[i] = Math.random();
         }
-        System.out.println(n);
         double max = array[0];
         double min = array[0];
         double avg = 0;
@@ -27,9 +23,9 @@ public class task1 {
             }
             avg += array[i]/array.length;
         }
-        System.out.println(max);
-        System.out.println(min);
-        System.out.println(avg);
+        System.out.println("MAX " + max);
+        System.out.println("MIN " + min);
+        System.out.println("AVG " + avg);
     }
 
 

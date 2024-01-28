@@ -17,7 +17,7 @@ public class task2 {
                 }
             }
             if (count != 0) {
-                System.out.println("повторяющися символ " + myArray[i]);
+                System.out.println("повторяющийся символ " + myArray[i]);
             }
         }
 

@@ -4,19 +4,6 @@
 
 import java.util.Scanner;
 
-// public class task4 {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-//         System.out.println("Введите переменную hours");
-//         int H = Integer.parseInt(scanner.nextLine());
-//         System.out.println("Ведите переменную minutes");
-//         int m = Integer.parseInt(scanner.nextLine());
-
-
-//     }
-    
-// }
-
 public class task4 {
     public static void main (String[] args) 
     {
